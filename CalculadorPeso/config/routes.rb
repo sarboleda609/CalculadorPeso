@@ -1,9 +1,11 @@
 CalculadorPeso::Application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
+  get "calculador_peso/index"
+  match 'calculate' ,to: 'calculador_peso#calculate', via: :all
+  # Te priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+	#get 'calculate' => 'home#calculate'
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  #root 'welcome#peso'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

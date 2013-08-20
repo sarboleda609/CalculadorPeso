@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-CalculadorPeso::Application.config.secret_key_base = '834bae468c5bd16de5a4f7034a5af10499681aca78d74285c3585dd4321f1cec049b2cbe2158fe303a9c018450436890c60d2fe14448e2713144bdf29c4d7d26'
+CalculadorPeso::Application.config.secret_key_base = '50c4b9f921dbc293f4e12a5d80c8aba5d5bdafd8e7e3814d44305fdc8cf35eeaeee845aefcebf7e6c3ae10a76db3ac6f2ac1d3c473597dadaa5b15934422239a'
