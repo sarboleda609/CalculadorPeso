@@ -1,0 +1,20 @@
+<h1> Calculador de Peso ideal</h1><br>
+<div align="center" width ="100%" height="40" style = "background-color:red;"></div>
+<%= form_tag('/calculate') do  %>
+<%= label_tag(:f, "Altura")%> <br>
+<%= text_field_tag(:alt) %><%= select_tag(:unidadaltura, options_for_select([['cm', 1], ['pulgadas', 2]],:selected => params[:unidadaltura])) %><br/><br/>
+
+<%= label_tag(:f, "Genero")%> <br>
+<%= select_tag(:unidadi, options_for_select([['Mujer', 1], ['Hombre', 2]],:selected => params[:unidadi])) %><br>
+	
+<br />
+	
+        <%= label_tag(:d, "Formula") %><br />
+	<%= select_tag(:met, options_for_select([['BMI', 1], ['Devine', 2], ['Robinson', 3], ['Miller', 4]],:selected => params[:met])) %>
+        <br>
+        <br>
+        <%= label_tag(:d, "Unidad de Respuesta") %><br />
+<%= select_tag(:unidadr, options_for_select([['Kg', 1], ['Lb', 2]],:selected => params[:unidadr])) %><br/><br/>
+        
+<%= submit_tag("Calcular") %><%= text_field_tag(:r, @result, :disabled => true) %>
+<% end %>
